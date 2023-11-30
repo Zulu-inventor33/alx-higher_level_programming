@@ -63,5 +63,6 @@ class Rectangle:
         for column in range(self.__height):
             for row in range(self.__width):
                 rectangle += "#"
-            rectangle += "\n"
+            if column < self.__height - 1:
+                rectangle += "\n"
         return rectangle
