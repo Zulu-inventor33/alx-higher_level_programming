@@ -5,6 +5,6 @@ and print its contents to stdio"""
 
 def read_file(filename=""):
     """A function that will take the input"""
-    with open(filename,"r") as f:
+    with open(filename,encoding = "utf-8") as f:
         """printing the content"""
         print(f.read())
