@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-magic_string = __import__('100-magic_string').magic_string
-
-for i in range(10):
-    print(magic_string())
+def magic_string():
+    magic_string.count = getattr(magic_string, 'count', 0) + 1
+    return ", ".join(["BestSchool" for i in range(magic_string.count)])
